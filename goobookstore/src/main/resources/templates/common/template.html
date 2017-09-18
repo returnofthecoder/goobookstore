@@ -1,0 +1,81 @@
+<!Doctype html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="common-header">
+<meta charset="UTF-8" />
+<title>Goo Bookstore</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+</head>
+
+<body>
+	<div th:fragment="navbar">
+	    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+	        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="navbar-toggler-icon"></span>
+	        </button>
+	        <a class="navbar-brand" href="#" th:href="@{/}">Goo Bookstore</a>
+	        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+	            <ul class="navbar-nav">
+	                <li class="nav-item active">
+	                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+	                </li>
+	                <li class="nav-item dropdown">
+	                    <a class="nav-link dropdown-toggle" href="http://example.com" id="bookNavbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	                        Book Admin
+	                    </a>
+	                    <div class="dropdown-menu" aria-labelledby="bookNavbarDropdownMenuLink">
+	                        <a class="dropdown-item" href="#" th:href="@{/book/addbook/}">Add Book</a>
+	                        <a class="dropdown-item" href="#" th:href="@{/book/updatebook/}">Update Book</a>
+	                        <a class="dropdown-item" href="#" th:href="@{/book/booklist/}">Book List</a>
+	                        <a class="dropdown-item" href="#">Something else here</a>
+	                    </div>
+	                </li>
+	                <li class="nav-item dropdown">
+	                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	                        Dropdown link1
+	                    </a>
+	                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+	                        <a class="dropdown-item" href="#">Action</a>
+	                        <a class="dropdown-item" href="#">Another action</a>
+	                        <a class="dropdown-item" href="#">Something else here</a>
+	                    </div>
+	                </li>
+	                <li class="nav-item dropdown">
+	                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	                        Dropdown link1
+	                    </a>
+	                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+	                        <a class="dropdown-item" href="#">Action</a>
+	                        <a class="dropdown-item" href="#">Another action</a>
+	                        <a class="dropdown-item" href="#">Something else here</a>
+	                    </div>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link" href="#">Features</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link" href="#">Pricing</a>
+	                </li>
+	            </ul>
+	        </div>
+	    </nav>
+	</div>
+	
+	
+	<div th:fragment="body-bottom-scripts">
+		<div class="container">
+			<nav class="navbar navbar-fixed-bottom">
+				<p class="navbar-text" style="margin: 0 auto;">
+					<a href="#">Tanagorn Ruangpaisarn</a> &copy; 2017 | Return of the Coder
+				</p>
+			</nav>
+		</div>
+	    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+	</div>
+	
+	
+</body>
+
+</html>
